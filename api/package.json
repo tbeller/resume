@@ -1,14 +1,11 @@
 {
-  "name": "visitorcounter-resumetbell",
-  "version": "1.0.0",
-  "description": "Count visits to the website",
-  "scripts": {
-    "start": "func start",
-    "test": "echo \"No tests yet...\""
-  },
-  "dependencies": {
-    "@azure/data-tables": "^13.3.0",
-    "@azure/functions": "^4.6.0"
-  },
-  "main": "src/{index.js,functions/*.js}"
+    "name": "visitor-counter-api",
+    "version": "1.0.0",
+    "main": "visitorCounter.js",
+    "engines": {
+        "node": "20"
+    },
+    "dependencies": {
+        "@azure/data-tables": "^13.3.0"
+    }
 }
