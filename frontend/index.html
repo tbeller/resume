@@ -173,12 +173,11 @@
     </div>
     <div class="footer">
         <p><span id="visitorCount">Loading...</span></p>
-        <p>&copy; <span id="yearSpan"></span>Tom Beller. All rights reserved.</p>
+        <p>&copy; <span id="year"></span>Tom Beller. All rights reserved.</p>
         <script>
             // Update the footer year to the current year
             document.addEventListener('DOMContentLoaded', function() {
-                const yearSpan = document.querySelector('.footer p');
-                yearSpan.innerHTML = new Date().getFullYear();
+                document.getElementById('year').textContent = new Date().getFullYear();
             });
 
             // Fetch visitor count from Azure Function
