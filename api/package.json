@@ -1,9 +1,9 @@
 {
     "name": "visitor-counter-api",
     "version": "1.0.0",
-    "main": "visitorCounter.js",
+    "main": "index.js",
     "engines": {
-        "node": "20.x"
+        "node": "18.x"
     },
     "dependencies": {
         "@azure/data-tables": "^13.3.0"
