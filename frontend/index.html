@@ -16,6 +16,29 @@
             padding: 0;
         }
 
+        .social-links {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            transition: fill 0.2s ease-in-out;
+        }
+
         .container {
             max-width: 800px;
             margin: 30px auto;
@@ -24,6 +47,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border: 1px solid #cccccc;
+            position: relative;
         }
 
         .name {
@@ -65,6 +89,15 @@
 <body>
     <div class="container">
         <h1 class="name">Tom Beller</h1>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tom-beller-4b8156a8/" target="_blank" aria-label="LinkedIn">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="LinkedIn"
+                    class="social-icon">
+            </a>
+            <a href="https://github.com/tbeller/resume" target="_blank" aria-label="GitHub">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub" class="social-icon">
+            </a>
+        </div>
         <div class="section">
             <h2>Technologies</h2>
             <ul>
@@ -189,7 +222,7 @@
                 const count = await response.text();
                 document.getElementById('visitorCount').textContent = count;
             }
-            fetchVisitorCount(); 
+            fetchVisitorCount();
 
         </script>
     </div>
