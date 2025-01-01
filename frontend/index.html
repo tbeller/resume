@@ -184,17 +184,12 @@
             });
 
             // Fetch visitor count from Azure Function
-            const fetchVisitorCount = async () => {
-                try {
-                    const response = await fetch('/api/visitorCounter');
-                    const data = await response.json();
-                    document.getElementById('visitorCount').textContent = `Visitor count: ${data.visitorCount}`;
-                } catch (error) {
-                    console.error("Error fetching visitor count:", error);
-                }
-            };
-
-            fetchVisitorCount();
+            async function fetchVisitorCount() {
+                const response = await fetch('/api/visitorCounter');
+                const count = await response.text();
+                document.getElementById('visitorCount').textContent = count;
+            }
+            fetchVisitorCount(); 
 
         </script>
     </div>
