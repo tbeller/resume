@@ -30,3 +30,6 @@ jspm_packages/
 # Ignore OS specific files
 .DS_Store
 Thumbs.db
+
+# Ignore VSCode specific files
+.vscode/
