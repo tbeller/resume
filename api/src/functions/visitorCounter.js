@@ -2,7 +2,7 @@ const { app } = require('@azure/functions');
 const { TableClient } = require('@azure/data-tables');
 
 // Define the Azure Table Storage details
-const connectionString = process.env.AzureWebJobsStorage;
+const connectionString = process.env.STORAGE_CONNECTION_STRING;
 const tableName = 'VisitorCounter';
 
 // HTTP trigger for the visitor counter
