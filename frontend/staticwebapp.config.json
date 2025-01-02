@@ -1,5 +1,10 @@
 {
     "navigationFallback": {
         "rewrite": "/index.html"
+    },
+    "mimeTypes": {
+        ".ico": "image/x-icon",
+        ".png": "image/png",
+        ".svg": "image/svg+xml"
     }
 }
