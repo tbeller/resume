@@ -16,18 +16,13 @@ app.http('visitorCounter', {
             // Connect to the Azure Table Storage
             const client = TableClient.fromConnectionString(connectionString, tableName);
 
-            // Ensure the table exists
-            await client.createTable();
-
             // Retrieve the current visitor count
             let entity;
             try {
                 entity = await client.getEntity('counter', 'totalVisits');
-                context.log(`Retrieved entity: ${JSON.stringify(entity)}`);
             } catch (error) {
                 if (error.statusCode === 404) {
                     // If entity does not exist, create it with an initial count
-                    context.log('Creating new entity for visitor counter');
                     entity = {
                         partitionKey: 'counter',
                         rowKey: 'totalVisits',
