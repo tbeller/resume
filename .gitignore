@@ -33,3 +33,9 @@ Thumbs.db
 
 # Ignore VSCode specific files
 .vscode/
+
+# Ignore Azurite storage emulator
+.azurite/
+
+# Ignore local.settings.json
+local.settings.json
