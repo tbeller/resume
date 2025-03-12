@@ -11,7 +11,7 @@ This project is a part of the [Cloud Resume Challenge](https://cloudresumechalle
    - Serverless backend API to track visitors
 
 3. **Infrastructure as Code**:
-   - Azure resources deployed with ARM templates
+   - Azure resources deployed with Bicep templates
 
 4. **CI/CD Integration**:
    - Push-to-deploy workflow via GitHub Actions
