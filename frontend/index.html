@@ -6,6 +6,7 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Tom Beller - Resume</title>
     <style>
         body {
@@ -27,17 +28,17 @@
 
         .social-links a {
             text-decoration: none;
-            transition: transform 0.2s ease-in-out;
         }
 
-        .social-links a:hover {
-            transform: scale(1.2);
+        .social-links i {
+            font-size: 30px;
+            color: #1a1a1a;
         }
 
         .social-icon {
-            width: 30px;
-            height: 30px;
-            transition: fill 0.2s ease-in-out;
+            width: 27px;
+            height: 27px;
+            padding-top: 1px;
         }
 
         .container {
@@ -58,13 +59,11 @@
         h1 {
             font-size: 28px;
             color: #333333;
-            margin-bottom: 15px;
         }
 
         h2 {
             font-size: 22px;
             color: #333333;
-            /* border-bottom: 2px solid #0047ab; */
             padding-bottom: 5px;
             margin-bottom: 20px;
             position: relative;
@@ -96,49 +95,100 @@
             margin-top: 20px;
         }
 
-        @media print {
-        body {
-            background-color: white;
+        .download-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+        }
+
+        .download-icon i {
+            font-size: 27px;
+            color: #1a1a1a;
+        }
+
+        .website {
+            text-align: center;
             margin: 0;
+            display: none;
+        }
+
+        .website a {
+            color: #1a1a1a;
+            text-decoration: none;
             padding: 0;
-            font-family: 'Roboto', sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        .footer {
-            display: none;
-        }
-
-        .container {
-            box-shadow: none;
+            background: none;
             border: none;
-            margin: 0px auto;
-            padding: 10px;
+            box-shadow: none;
+            font-size: 16px;
         }
 
-        h2 {
-            border-bottom: 2px solid #1a1a1a;
-        }
+        @media print {
+            body {
+                background-color: white;
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto', sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
 
-        .social-links {
-            display: none;
-        }
-        }
+            .footer {
+                display: none;
+            }
 
+            .container {
+                box-shadow: none;
+                border: none;
+                margin: 0px auto;
+                padding: 10px;
+            }
+
+            h1 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            h2 {
+                border-bottom: 2px solid #1a1a1a;
+                margin-top: 0;
+            }
+
+            .social-links {
+                display: none;
+            }
+
+            .download-icon {
+                display: none;
+            }
+
+            .website {
+                display: block;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1 class="name">Tom Beller</h1>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/tom-beller-4b8156a8/" target="_blank" aria-label="LinkedIn">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="LinkedIn"
-                    class="social-icon">
+        <div class="download-icon">
+            <a href="Tom Beller - Resume.pdf" download title="Download Resume">
+                <i class="fa-solid fa-download"></i>
             </a>
-            <a href="https://github.com/tbeller/resume" target="_blank" aria-label="GitHub">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub" class="social-icon">
+        </div>
+        <h1 class="name">Tom Beller</h1>
+        <p class="website"><a href="https://tombeller.info" target="_blank">https://tombeller.info</a></p>
+        <div class="social-links">
+            <a href="https://tombeller.info" target="_blank" aria-label="Personal Profile" title="Personal Profile">
+                <img src="personalprofile.svg" alt="Personal Profile" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/tom-beller-4b8156a8/" target="_blank" aria-label="LinkedIn"
+                title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/tbeller/resume" target="_blank" aria-label="GitHub" aria-label="GitHub"
+                title="GitHub">
+                <i class="fa-brands fa-github"></i>
             </a>
         </div>
         <div class="section">
