@@ -165,6 +165,62 @@
             .website {
                 display: block;
             }
+
+            @page {
+                margin: 0.5in;
+            }
+
+            /* h2::after {
+                background: none;
+                border-bottom: 2px solid #1a1a1a;
+            } */
+
+            /* .section {
+                page-break-inside: avoid;
+            } */
+
+            h2, h3 {
+                page-break-after: avoid;
+            }
+
+            .professional-summary {
+                margin-bottom: 15px;
+            }
+        }
+
+        .skills-content {
+            margin-top: 20px;
+        }
+
+        .skills-category {
+            margin-bottom: 20px;
+        }
+
+        .skills-category h3 {
+            font-weight: bold;
+            margin-bottom: 8px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-box {
+            color: #333;
+            font-weight: 500;
+        }
+
+        .skill-box::before {
+            content: " •";
+            color: #999;
+            margin-right: 4px;
         }
     </style>
 </head>
@@ -191,33 +247,10 @@
                 <i class="fa-brands fa-github"></i>
             </a>
         </div>
-        <div class="section">
-            <h2>Technologies</h2>
-            <ul>
-                <li>Microsoft Azure, Entra ID, Intune</li>
-                <li>Terraform for Infrastructure as Code (IaC)</li>
-                <li>Microsoft Windows Server and on-prem platforms</li>
-                <li>Linux administration</li>
-                <li>Microsoft Hyper-V</li>
-                <li>VMware vSphere, Horizon View, vSAN</li>
-                <li>Nutanix multi-cloud infrastructure</li>
-                <li>SAN storage management</li>
-                <li>PowerShell</li>
-                <li>Backup, replication, and disaster recovery</li>
-                <li>Switch, router, and firewall configuration and management</li>
-            </ul>
+        <div class="professional-summary">
+            <p>IT Infrastructure Specialist with 10+ years of experience in cloud and on-premises environments. Proven ability to implement innovative solutions that streamline operations, enhance security, and support organizational growth.</p>
         </div>
-
-        <div class="section">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Microsoft Certified: Azure Administrator Associate</li>
-                <li>Microsoft Certified: Azure Virtual Desktop Specialty</li>
-                <li>Nutanix Certified Services Core</li>
-                <li>Nutanix Certified Systems Engineer - Core</li>
-                <li>Nutanix Certified Professional - Multicloud Infrastructure 5 (expired)</li>
-            </ul>
-        </div>
+        
 
         <div class="section">
             <h2>Work Experience</h2>
@@ -233,6 +266,7 @@
                 <li>Provided consulting and engineering expertise for Microsoft platforms (on-prem and cloud)</li>
                 <li>Implemented multi-factor authentication systems (Cisco Duo, Azure Entra ID MFA/SSO)</li>
                 <li>Conducted performance analyses to optimize infrastructure and minimize downtime</li>
+                <li>Recipient of the Above & Beyond award</li>
             </ul>
 
             <h3>Warren Distribution</h3>
@@ -285,20 +319,123 @@
             </ul>
         </div>
 
+        <div id="skills" class="section">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li class="skill-box">Azure</li>
+                        <li class="skill-box">Infrastructure as Code</li>
+                        <li class="skill-box">Windows Server</li>
+                        <li class="skill-box">Linux</li>
+                        <li class="skill-box">Virtualization</li>
+                        <li class="skill-box">VDI</li>
+                        <li class="skill-box">Storage</li>
+                        <li class="skill-box">Backup</li>
+                        <li class="skill-box">Disaster Recovery</li>
+                        <li class="skill-box">Networking</li>
+                        <li class="skill-box">Security</li>
+                        <li class="skill-box">IAM</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li class="skill-box">Logical Reasoning</li>
+                        <li class="skill-box">Problem Solving</li>
+                        <li class="skill-box">Fast Learner</li>
+                        <li class="skill-box">Attention to Detail</li>
+                        <li class="skill-box">Responsibility</li>
+                        <li class="skill-box">Composure</li>
+                        <li class="skill-box">Adaptability</li>
+                        <li class="skill-box">Teamwork</li>
+                        <li class="skill-box">Communication</li>
+                        <li class="skill-box">Customer Service</li>
+                        <li class="skill-box">Project Management</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Technologies</h3>
+                    <ul class="skill-list">
+                        <li class="skill-box">Azure IaaS</li>
+                        <li class="skill-box">Azure PaaS</li>
+                        <li class="skill-box">Azure Virtual Desktop</li>
+                        <li class="skill-box">FSLogix</li>
+                        <li class="skill-box">Bicep</li>
+                        <li class="skill-box">Terraform</li>
+                        <li class="skill-box">Docker</li>
+                        <li class="skill-box">Kubernetes</li>
+                        <li class="skill-box">Ansible</li>
+                        <li class="skill-box">Git</li>
+                        <li class="skill-box">Windows Server</li>
+                        <li class="skill-box">Linux</li>
+                        <li class="skill-box">VMware vSphere</li>
+                        <li class="skill-box">VMware Horizon</li>
+                        <li class="skill-box">Hyper-V</li>
+                        <li class="skill-box">Proxmox</li>
+                        <li class="skill-box">Nutanix</li>
+                        <li class="skill-box">Pure Storage</li>
+                        <li class="skill-box">Veeam Backup &amp; Replication</li>
+                        <li class="skill-box">HYCU</li>
+                        <li class="skill-box">Microsoft 365</li>
+                        <li class="skill-box">Intune</li>
+                        <li class="skill-box">Endpoint Manager</li>
+                        <li class="skill-box">Entra ID</li>
+                        <li class="skill-box">Active Directory</li>
+                        <li class="skill-box">Group Policy</li>
+                        <li class="skill-box">ADFS</li>
+                        <li class="skill-box">RDS</li>
+                        <li class="skill-box">Jira</li>
+                        <li class="skill-box">Confluence</li>
+                        <li class="skill-box">Fortinet</li>
+                        <li class="skill-box">Cisco</li>
+                        <li class="skill-box">Meraki</li>
+                        <li class="skill-box">SQL Server</li>
+                        <li class="skill-box">PRTG</li>
+                        <li class="skill-box">PowerShell</li>
+                        <li class="skill-box">Bash</li>
+                        <li class="skill-box">Python</li>
+                        <li class="skill-box">Exchange</li>
+                        <li class="skill-box">Mimecast</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="section">
+            <h2>Technologies</h2>
+            <ul>
+                <li>Microsoft Azure, Entra ID, Intune</li>
+                <li>Terraform for Infrastructure as Code (IaC)</li>
+                <li>Microsoft Windows Server and on-prem platforms</li>
+                <li>Linux administration</li>
+                <li>Microsoft Hyper-V</li>
+                <li>VMware vSphere, Horizon View, vSAN</li>
+                <li>Nutanix multi-cloud infrastructure</li>
+                <li>SAN storage management</li>
+                <li>PowerShell</li>
+                <li>Backup, replication, and disaster recovery</li>
+                <li>Switch, router, and firewall configuration and management</li>
+            </ul>
+        </div> -->
+
+        <div class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Microsoft Certified: Azure Administrator Associate</li>
+                <li>Microsoft Certified: Azure Virtual Desktop Specialty</li>
+                <li>Nutanix Certified Services Core</li>
+                <li>Nutanix Certified Systems Engineer - Core</li>
+                <li>Nutanix Certified Professional - Multicloud Infrastructure 5 (expired)</li>
+            </ul>
+        </div>
+
         <div class="section">
             <h2>Education</h2>
             <p><strong>University of Nebraska at Omaha</strong></p>
             <p>The Peter Kiewit Institute | B.S. in Management Information Systems</p>
         </div>
 
-        <div class="section">
-            <h2>Honors</h2>
-            <ul>
-                <li>Recipient of Above & Beyond award (Heartland Business Systems, 2021)</li>
-                <li>Walter Scott Jr. and Regents Scholarships recipient</li>
-                <li>Participated in IT Global Project Management study abroad program in Austria and Germany</li>
-            </ul>
-        </div>
     </div>
     <div class="footer">
         <p><span id="visitorCount">Loading...</span></p>
@@ -316,7 +453,6 @@
                 document.getElementById('visitorCount').textContent = count;
             }
             fetchVisitorCount();
-
         </script>
     </div>
 </body>
