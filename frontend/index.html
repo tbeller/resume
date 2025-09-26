@@ -209,7 +209,8 @@
             gap: 5px;
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin: 0 0 0 70px;
+            padding-left: 0;
         }
 
         .skill-box {
@@ -222,6 +223,19 @@
             color: #999;
             margin-right: 4px;
         }
+
+        .skill-list .skill-box:first-child::before {
+            content: "";
+            margin-right: 0;
+        }
+
+        .skills-inline {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -233,28 +247,61 @@
             </a>
         </div>
         <h1 class="name">Tom Beller</h1>
-        <p class="website">
-            <a href="https://tombeller.info" target="_blank">https://tombeller.info</a>
-            &nbsp;|&nbsp;
-            <a href="mailto:mr.tom.beller@gmail.com" target="_blank">mr.tom.beller@gmail.com</a>
-        </p>
         <div class="social-links">
             <a href="https://tombeller.info" target="_blank" aria-label="Personal Profile" title="Personal Profile">
                 <img src="personalprofile.svg" alt="Personal Profile" class="social-icon">
             </a>
-            <a href="https://www.linkedin.com/in/tom-beller-4b8156a8/" target="_blank" aria-label="LinkedIn"
-                title="LinkedIn">
+            <a href="https://www.linkedin.com/in/tom-beller-4b8156a8/" target="_blank" aria-label="LinkedIn" title="LinkedIn">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="https://github.com/tbeller/resume" target="_blank" aria-label="GitHub" aria-label="GitHub"
-                title="GitHub">
+            <a href="https://github.com/tbeller/resume" target="_blank" aria-label="GitHub" title="GitHub">
                 <i class="fa-brands fa-github"></i>
             </a>
         </div>
         <div class="professional-summary">
             <p>IT Infrastructure Engineer with 10+ years of experience in cloud and on-premises environments. Proven ability to implement innovative solutions that streamline operations, enhance security, and support organizational growth.</p>
         </div>
-        
+
+        <div class="section">
+            <h2>Work Experience</h2>
+
+            <h3>Heartland Business Systems</h3>
+            <p><strong>Senior Systems Engineer</strong> | Dec 2020 – Aug 2022</p>
+            <ul>
+                <li>Delivered pre-sales and post-sales engineering services across varied client environments</li>
+                <li>Assessed infrastructure needs and designed/implemented modernized solutions</li>
+                <li>Deployed and managed Azure Entra ID, storage accounts, and cost analysis solutions</li>
+                <li>Designed and deployed Nutanix hyper-converged systems and Pure Storage solutions</li>
+                <li>Provided consulting and engineering expertise for Microsoft platforms (on-prem and cloud)</li>
+                <li>Implemented multi-factor authentication (Cisco Duo, Entra ID MFA/SSO)</li>
+                <li>Performed performance analyses to reduce bottlenecks and downtime risk</li>
+                <li>Recipient of Above & Beyond award</li>
+            </ul>
+
+            <h3>Warren Distribution</h3>
+            <p><strong>Senior Systems Engineer</strong> | May 2018 – Dec 2020</p>
+            <ul>
+                <li>Led infrastructure engineering across nine locations</li>
+                <li>Established redundant data centers and migrated services to modernized platforms</li>
+                <li>Designed and implemented backup and disaster recovery solutions</li>
+                <li>Upgraded and replaced network infrastructure across all sites</li>
+                <li>Deployed Remote Desktop Services and endpoint management solutions</li>
+                <li>Developed and executed IT security strategy</li>
+                <li>Implemented PowerShell scripts to streamline system management</li>
+            </ul>
+
+            <h3>Airlite Plastics Co</h3>
+            <p><strong>Solutions Architect</strong> | Aug 2011 – May 2018</p>
+            <ul>
+                <li>Designed and deployed systems and infrastructure across redundant data centers</li>
+                <li>Executed hardware migrations with zero business downtime</li>
+                <li>Implemented VMware Horizon View and Site Recovery Manager</li>
+                <li>Configured SCCM for patching, application, and OS deployment</li>
+                <li>Upgraded Active Directory forest and modernized remote site network infrastructure</li>
+                <li>Deployed enterprise platforms (Jira Service Desk, Confluence)</li>
+                <li>Trained and mentored junior team members</li>
+            </ul>
+        </div>
 
         <div class="section">
             <h2>Certifications</h2>
@@ -271,150 +318,19 @@
             <p>The Peter Kiewit Institute | B.S. in Management Information Systems</p>
         </div>
 
-        <div class="section">
-            <h2>Work Experience</h2>
-
-            <h3>Heartland Business Systems</h3>
-            <p><strong>Senior Systems Engineer</strong> | Dec 2020 – Aug 2022</p>
-            <ul>
-                <li>Delivered pre-sales and post-sales engineering services to clients</li>
-                <li>Collaborated with clients to assess infrastructure needs, design solutions, and implement new or
-                    updated infrastructure</li>
-                <li>Deployed and managed Azure Entra ID, storage accounts, and cost analysis solutions</li>
-                <li>Designed and deployed Nutanix hyper-converged systems and Pure Storage solutions</li>
-                <li>Provided consulting and engineering expertise for Microsoft platforms (on-prem and cloud)</li>
-                <li>Implemented multi-factor authentication systems (Cisco Duo, Azure Entra ID MFA/SSO)</li>
-                <li>Conducted performance analyses to optimize infrastructure and minimize downtime</li>
-                <li>Recipient of the Above & Beyond award</li>
-            </ul>
-
-            <h3>Warren Distribution</h3>
-            <p><strong>Senior Systems Engineer</strong> | May 2018 – Dec 2020</p>
-            <ul>
-                <li>Managed IT infrastructure across nine locations</li>
-                <li>Established redundant data centers and migrated services to modernized systems</li>
-                <li>Designed and implemented backup and disaster recovery processes</li>
-                <li>Upgraded and replaced network infrastructure across all sites</li>
-                <li>Configured and deployed Remote Desktop Services and endpoint management solutions</li>
-                <li>Developed a comprehensive IT security strategy</li>
-                <li>Deployed Mimecast for email security and filtering</li>
-                <li>Implemented PowerShell scripts to streamline system management tasks</li>
-            </ul>
-
-            <h3>Airlite Plastics Co</h3>
-            <p><strong>Solutions Architect</strong> | Aug 2011 – May 2018</p>
-            <ul>
-                <li>Analyzed business needs to implement technical solutions</li>
-                <li>Deployed enterprise tools, including JIRA Service Desk, JIRA Core, and Confluence</li>
-                <li>Implemented Cisco Spark for cloud-hosted communication</li>
-                <li>Guided network infrastructure upgrade projects</li>
-                <li>Trained and mentored junior team members</li>
-            </ul>
-            <p><strong>Senior Systems Engineer</strong></p>
-            <ul>
-                <li>Designed and deployed new systems and infrastructure across redundant data centers</li>
-                <li>Migrated datacenter operations to new hardware with zero business downtime</li>
-                <li>Installed VMware Horizon View and Site Recovery Manager for high availability and failover</li>
-                <li>Configured SCCM 2012 R2 for updates, application, and OS deployment</li>
-                <li>Upgraded Active Directory forests and replaced legacy network infrastructure at remote sites</li>
-            </ul>
-            <p><strong>Senior Systems Administrator</strong></p>
-            <ul>
-                <li>Led systems and networking team in a 24/7 manufacturing environment</li>
-                <li>Proactively identified and resolved system issues to prevent downtime</li>
-                <li>Deployed and managed Unidesk for virtual desktops and Veeam Backup solutions</li>
-            </ul>
-            <p><strong>Systems Administrator</strong></p>
-            <ul>
-                <li>Maintained virtual desktops, servers, storage, and applications</li>
-                <li>Enhanced system reliability through root cause analysis and proactive fixes</li>
-                <li>Migrated users to virtual desktops for streamlined remote management</li>
-            </ul>
-            <p><strong>Helpdesk Technician</strong></p>
-            <ul>
-                <li>Resolved end-user issues and deployed workstations using Windows Deployment Services</li>
-                <li>Installed SharePoint 2010 and configured Hyper-V clusters</li>
-                <li>Assisted in Active Directory migration for acquired offices</li>
-            </ul>
-        </div>
-
         <div id="skills" class="section">
             <h2>Skills & Technologies</h2>
             <div class="skills-content">
                 <div class="skills-category">
-                    <h3>Technical Skills</h3>
                     <ul class="skill-list">
                         <li class="skill-box">Azure</li>
-                        <li class="skill-box">Infrastructure as Code</li>
-                        <li class="skill-box">Windows Server</li>
-                        <li class="skill-box">Linux</li>
-                        <li class="skill-box">Virtualization</li>
-                        <li class="skill-box">VDI</li>
-                        <li class="skill-box">Storage</li>
-                        <li class="skill-box">Backup</li>
-                        <li class="skill-box">Disaster Recovery</li>
-                        <li class="skill-box">Networking</li>
-                        <li class="skill-box">Security</li>
-                        <li class="skill-box">IAM</li>
-                    </ul>
-                </div>
-                <div class="skills-category">
-                    <h3>Soft Skills</h3>
-                    <ul class="skill-list">
-                        <li class="skill-box">Logical Reasoning</li>
-                        <li class="skill-box">Problem Solving</li>
-                        <li class="skill-box">Fast Learner</li>
-                        <li class="skill-box">Attention to Detail</li>
-                        <li class="skill-box">Responsibility</li>
-                        <li class="skill-box">Composure</li>
-                        <li class="skill-box">Adaptability</li>
-                        <li class="skill-box">Teamwork</li>
-                        <li class="skill-box">Communication</li>
-                        <li class="skill-box">Customer Service</li>
-                        <li class="skill-box">Project Management</li>
-                    </ul>
-                </div>
-                <div class="skills-category">
-                    <h3>Technologies</h3>
-                    <ul class="skill-list">
-                        <li class="skill-box">Azure IaaS</li>
-                        <li class="skill-box">Azure PaaS</li>
-                        <li class="skill-box">Azure Virtual Desktop</li>
-                        <li class="skill-box">FSLogix</li>
-                        <li class="skill-box">Bicep</li>
                         <li class="skill-box">Terraform</li>
+                        <li class="skill-box">Bicep</li>
+                        <li class="skill-box">Ansible</li>
+                        <li class="skill-box">PowerShell</li>
+                        <li class="skill-box">Git</li>
                         <li class="skill-box">Docker</li>
                         <li class="skill-box">Kubernetes</li>
-                        <li class="skill-box">Ansible</li>
-                        <li class="skill-box">Git</li>
-                        <li class="skill-box">Windows Server</li>
-                        <li class="skill-box">Linux</li>
-                        <li class="skill-box">VMware vSphere</li>
-                        <li class="skill-box">VMware Horizon</li>
-                        <li class="skill-box">Hyper-V</li>
-                        <li class="skill-box">Proxmox</li>
-                        <li class="skill-box">Nutanix</li>
-                        <li class="skill-box">Pure Storage</li>
-                        <li class="skill-box">Veeam Backup &amp; Replication</li>
-                        <li class="skill-box">HYCU</li>
-                        <li class="skill-box">Microsoft 365</li>
-                        <li class="skill-box">Intune</li>
-                        <li class="skill-box">Endpoint Manager</li>
-                        <li class="skill-box">Entra ID</li>
-                        <li class="skill-box">Active Directory</li>
-                        <li class="skill-box">Group Policy</li>
-                        <li class="skill-box">ADFS</li>
-                        <li class="skill-box">RDS</li>
-                        <li class="skill-box">Jira</li>
-                        <li class="skill-box">Confluence</li>
-                        <li class="skill-box">Fortinet</li>
-                        <li class="skill-box">Cisco</li>
-                        <li class="skill-box">Meraki</li>
-                        <li class="skill-box">SQL Server</li>
-                        <li class="skill-box">PowerShell</li>
-                        <li class="skill-box">Bash</li>
-                        <li class="skill-box">Python</li>
-                        <li class="skill-box">Exchange</li>
                     </ul>
                 </div>
             </div>
