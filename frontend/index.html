@@ -183,6 +183,21 @@
                 page-break-after: avoid;
             }
 
+            .skill-box::before {
+                content: "" !important;
+                margin-right: 0 !important;
+            }
+
+            .skill-box::after {
+                content: " •";
+                color: #999;
+                margin-left: 4px;
+            }
+
+            .skill-list .skill-box:last-child::after {
+                content: "";
+            }
+
             .professional-summary {
                 margin-bottom: 15px;
             }
@@ -224,7 +239,8 @@
             margin-right: 4px;
         }
 
-        .skill-list .skill-box:first-child::before {
+        .skill-list .skill-box:first-child::before,
+        .skill-box.line-start::before {
             content: "";
             margin-right: 0;
         }
@@ -247,6 +263,13 @@
             </a>
         </div>
         <h1 class="name">Tom Beller</h1>
+        <p class="website">
+            <a href="https://tombeller.info" target="_blank">https://tombeller.info</a>
+            &nbsp;|&nbsp;
+            <a href="mailto:mr.tom.beller@gmail.com" target="_blank">mr.tom.beller@gmail.com</a>
+            &nbsp;|&nbsp;
+            +52 55 5196 0112
+        </p>
         <div class="social-links">
             <a href="https://tombeller.info" target="_blank" aria-label="Personal Profile" title="Personal Profile">
                 <img src="personalprofile.svg" alt="Personal Profile" class="social-icon">
@@ -259,22 +282,29 @@
             </a>
         </div>
         <div class="professional-summary">
-            <p>IT Infrastructure Engineer with 10+ years of experience in cloud and on-premises environments. Proven ability to implement innovative solutions that streamline operations, enhance security, and support organizational growth.</p>
+            <p>Cloud Solutions Architect with 10+ years designing and implementing enterprise IT infrastructure across Azure and on-premises environments. Microsoft Certified Azure Solutions Architect Expert with expertise in cloud architecture, virtualization, security, identity management, and IaC.</p>
         </div>
 
         <div class="section">
             <h2>Work Experience</h2>
 
+            <h3>Microsoft (Cognizant)</h3>
+            <p><strong>Cloud Solutions Architect</strong> | Oct 2025 – Present</p>
+            <ul>
+                <li>Delivered Customer Success Programs focused on Azure resiliency and adoption</li>
+                <li>Identified and remediated critical gaps in customer Azure cloud deployments</li>
+                <li>Led in-depth Azure workload resiliency reviews to improve reliability and fault tolerance</li>
+                <li>Advised customers on Azure Well-Architected Framework best practices</li>
+            </ul>
+
             <h3>Heartland Business Systems</h3>
             <p><strong>Senior Systems Engineer</strong> | Dec 2020 – Aug 2022</p>
             <ul>
-                <li>Delivered pre-sales and post-sales engineering services across varied client environments</li>
+                <li>Delivered engineering services across varied pre- and post-sales engagements</li>
                 <li>Assessed infrastructure needs and designed/implemented modernized solutions</li>
                 <li>Deployed and managed Azure Entra ID, storage accounts, and cost analysis solutions</li>
                 <li>Designed and deployed Nutanix hyper-converged systems and Pure Storage solutions</li>
-                <li>Provided consulting and engineering expertise for Microsoft platforms (on-prem and cloud)</li>
-                <li>Implemented multi-factor authentication (Cisco Duo, Entra ID MFA/SSO)</li>
-                <li>Performed performance analyses to reduce bottlenecks and downtime risk</li>
+                <li>Provided expertise across Microsoft on-premises and cloud platforms</li>
                 <li>Recipient of Above & Beyond award</li>
             </ul>
 
@@ -286,29 +316,25 @@
                 <li>Designed and implemented backup and disaster recovery solutions</li>
                 <li>Upgraded and replaced network infrastructure across all sites</li>
                 <li>Deployed Remote Desktop Services and endpoint management solutions</li>
-                <li>Developed and executed IT security strategy</li>
-                <li>Implemented PowerShell scripts to streamline system management</li>
             </ul>
 
             <h3>Airlite Plastics Co</h3>
             <p><strong>Solutions Architect</strong> | Aug 2011 – May 2018</p>
             <ul>
                 <li>Designed and deployed systems and infrastructure across redundant data centers</li>
-                <li>Executed hardware migrations with zero business downtime</li>
-                <li>Implemented VMware Horizon View and Site Recovery Manager</li>
-                <li>Configured SCCM for patching, application, and OS deployment</li>
-                <li>Upgraded Active Directory forest and modernized remote site network infrastructure</li>
-                <li>Deployed enterprise platforms (Jira Service Desk, Confluence)</li>
-                <li>Trained and mentored junior team members</li>
+                <li>Executed hardware and platform migrations with zero business downtime</li>
+                <li>Implemented VMware Horizon View and Site Recovery Manager for VDI and DR</li>
+                <li>Trained and mentored junior IT team members</li>
             </ul>
         </div>
 
         <div class="section">
             <h2>Certifications</h2>
             <ul>
-                <li>Microsoft Certified: Azure Administrator Associate (AZ-104)</li>
+                <li>Microsoft Certified: Azure Solutions Architect Expert (AZ-305)</li>
                 <li>Microsoft Certified: Azure Security Engineer Associate (AZ-500)</li>
                 <li>Microsoft Certified: Azure Virtual Desktop Specialty (AZ-140)</li>
+                <li>Microsoft Certified: Azure Administrator Associate (AZ-104)</li>
             </ul>
         </div>
 
@@ -323,14 +349,25 @@
             <div class="skills-content">
                 <div class="skills-category">
                     <ul class="skill-list">
-                        <li class="skill-box">Azure</li>
-                        <li class="skill-box">Terraform</li>
+                        <li class="skill-box">Azure IaaS</li>
+                        <li class="skill-box">Azure PaaS</li>
+                        <li class="skill-box">Azure Virtual Desktop</li>
                         <li class="skill-box">Bicep</li>
+                        <li class="skill-box">Terraform</li>
+                        <li class="skill-box">Git</li>
                         <li class="skill-box">Ansible</li>
                         <li class="skill-box">PowerShell</li>
-                        <li class="skill-box">Git</li>
-                        <li class="skill-box">Docker</li>
-                        <li class="skill-box">Kubernetes</li>
+                        <li class="skill-box">Bash</li>
+                        <li class="skill-box">Python</li>
+                        <li class="skill-box">Entra ID</li>
+                        <li class="skill-box">Active Directory</li>
+                        <li class="skill-box">Intune</li>
+                        <li class="skill-box">Microsoft 365</li>
+                        <li class="skill-box">VMware vSphere</li>
+                        <li class="skill-box">Hyper-V</li>
+                        <li class="skill-box">Nutanix</li>
+                        <li class="skill-box">Pure Storage</li>
+                        <li class="skill-box">Veeam</li>
                     </ul>
                 </div>
             </div>
@@ -341,10 +378,24 @@
         <p><span id="visitorCount">Loading...</span></p>
         <p>&copy; <span id="year"></span> Tom Beller. All rights reserved.</p>
         <script>
-            // Update the footer year to the current year
+            function updateSkillLineStarts() {
+                const items = document.querySelectorAll('.skill-box');
+                let lastTop = -1;
+                items.forEach(item => {
+                    item.classList.remove('line-start');
+                    const top = Math.round(item.getBoundingClientRect().top);
+                    if (top !== lastTop) {
+                        item.classList.add('line-start');
+                        lastTop = top;
+                    }
+                });
+            }
+
             document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('year').textContent = new Date().getFullYear();
+                updateSkillLineStarts();
             });
+            window.addEventListener('resize', updateSkillLineStarts);
 
             // Fetch visitor count from Azure Function
             async function fetchVisitorCount() {
